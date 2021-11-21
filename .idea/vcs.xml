@@ -3,7 +3,5 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/windows" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/windows/_os_include" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/windows/include" vcs="Git" />
   </component>
 </project>

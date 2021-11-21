@@ -1,6 +1,10 @@
-cmake_minimum_required(VERSION 3.20)
-project(os)
+cmake_minimum_required(VERSION 3.0)
 
+add_library(__COMiC__os_include INTERFACE)
+add_library(COMiC::os::_include ALIAS __COMiC__os_include)
+
+target_link_libraries(__COMiC__os_include INTERFACE COMiC::types)
+target_include_directories(__COMiC__os_include INTERFACE include)
 
 if (TARGET COMiC::os)
     message("using external os api")
