@@ -15,7 +15,6 @@ typedef struct COMiC_Error
 } COMiC_Error;
 
 
-
 #include <COMiC/_os.h>
 
 /*
@@ -142,6 +141,16 @@ void COMiC_OS_Lock_Unlock(COMiC_Lock *storage);
 /* COMiC_bool COMiC_OS_Lock_IsLocked(COMiC_Lock *storage); */
 
 void COMiC_OS_Lock_Destroy(COMiC_Lock *storage);
+
+COMiC_success COMiC_OS_CondVar_Create(COMiC_CondVar *storage, COMiC_Lock *lock);
+
+COMiC_success COMiC_OS_CondVar_Wait(COMiC_CondVar *storage/*, COMiC_uint32 milliseconds*/);
+
+void COMiC_OS_CondVar_Notify(COMiC_CondVar *storage);
+
+void COMiC_OS_CondVar_NotifyAll(COMiC_CondVar *storage);
+
+void COMiC_OS_CondVar_Destroy(COMiC_CondVar *storage);
 
 #if COMiC_LIMITED
 # pragma pop()

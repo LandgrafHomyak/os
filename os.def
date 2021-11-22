@@ -26,3 +26,8 @@ EXPORTS
     COMiC_OS_Lock_Lock
     COMiC_OS_Lock_Unlock
     COMiC_OS_Lock_Destroy
+    COMiC_OS_CondVar_Create
+    COMiC_OS_CondVar_Wait
+    COMiC_OS_CondVar_Notify
+    COMiC_OS_CondVar_NotifyAll
+    COMiC_OS_CondVar_Destroy
